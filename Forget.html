@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        function Call(){
+            var v = prompt("Enter OTP");
+            if(v==1111)
+            {alert("Your Password is 12345678");
+                
+            }
+        else{
+                alert("Enter Correct OTP");
+                v = prompt("Enter OTP");
+            }
+
+}
+    </script>
+    <style>
+        th {
+            color: gold;
+           
+        }
+
+        td {
+            color: red;
+            background-color: darkorchid;
+        }
+
+        div {
+            color: blue;
+            background-color: dimgray;
+        }
+
+        button {color:black;
+            background-color:darkkhaki;
+        }
+
+        input {
+            color: black;
+            background-color: darkkhaki;
+        }
+
+        select {
+            color: blue;
+            background-color: darkkhaki;
+        }
+
+        h1 {
+            color: goldenrod;
+            background-color: black;
+        }
+    </style>
+</head>
+<body background="2.bmp">
+
+    <form align="Center">
+        <h1>Forget Password</h1>
+        <hr />
+        <center>
+            <table border="1">
+                <tr>
+                    <th class="tdLabel"><label for="register_name" class="label">Username</label></th>
+                    <td><input type="text" name="name" value="" id="register_name" style="width:160px" minlength="6" maxlength="12" /></td>
+                </tr>
+                
+                
+                <tr>
+                    <th class="tdLabel"><label for="register_phone" class="label">Mobile No</label></th>
+                    <td>
+                        <input type="text" name="phone" value="" id="phone" pattern="[7-9][0-9]{9}" style="width:160px" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tdLabel"><label for="register_email" class="label">Email</label></th>
+                    <td>
+                        <input type="email" name="email" value="" id="register_email" style="width:160px" pattern="[A-Z a-z ]+[@]gmail.com" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tdLabel"><label for="con_register_email" class="label">Conform Email</label></th>
+                    <td>
+                        <input type="email" name="conemail" value="" id="con_register_email" style="width:160px" />
+                    </td>
+                </tr>
+                
+               
+                <tr>
+                    <th >
+                        <div align="Center">
+                            <input type="button" id="register_0" value="Ok" onclick="Call()" />
+                        </div>
+                    </th>
+                    <th>
+                        <div align="Center">
+                           <button type="reset">Cancle</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <div align="Center">
+                            <a href="LoginPage.html">Back</a>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </center>
+    </form>
+
+</body>
+</html>

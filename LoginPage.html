@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script>
+
+function validateform(){
+var name=document.myhello.username.value;
+var password=document.myhello.pass.value;
+
+if (name=="Nitesh" || password==12345678){
+    alert("Login Successfull");
+    open("HomePage.html");
+    
+}else{
+  alert("Enter Correct UserName and Password");
+  
+  }
+}
+        </script>
+
+    <style>
+
+        h1 {
+            color: blue;
+            background-color: red;
+        }
+        h2 {
+            color: gold;
+            background-color: black;
+        }
+         button { color:gold;
+        }
+          q { color:red;
+        }
+           p { color:blue;
+        }
+            a { color:blueviolet;
+        }
+    </style>
+
+</head>
+<body background="12.jpg">
+    <center> <h1 fgcolor="Orange">WelCome To FunWorld </h1> </center>
+    <hr />
+    <center> <h2 fgcolor="Orange">Please Login</h2> </center>
+    <hr />
+    <center>
+        <div>
+
+            <form name="myhello"  >
+
+                <table border="1" style="border-collapse:collapse">
+
+                    <tr>
+                        <th bgcolor="darkgoldenrod"><label for="username" />UserName:</th>
+                        <td><input type="text"  name="username"  size="40" bgcolor="gray" minlength="6" maxlength="12" placeholder="Enter a valid UserName"></td>
+                    </tr>
+                    <tr>
+                        <th bgcolor="darkgoldenrod"><label for="password" /> Password:</th>
+                        <td><input type="password"  name="pass"  size="40" bgcolor="gray"  minlength="8" maxlength="12" placeholder="Enter a valid Password" ></td>
+                    </tr>
+                    <tr>
+                        <th bgcolor="cyan"><button style="background-color:brown" type="button" onclick="validateform()">Login</button></th>
+                        <th bgcolor="cyan">  <button style="background-color:brown" type="reset">reset</button></th>
+
+                    </tr>
+                    <tr>
+                        <th bgcolor="khaki"><a href="NewUser.html">Create New Account</a></th>
+                        <th bgcolor="khaki"><a href="Forget.html">Forget PassWord</a></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" bgcolor="green"> <marquee width="100%" behavior="alternate" >Have A Nice Day </marquee> </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" rowspan="2" bgcolor="Orange">
+                            <p> Great quote on love and life.</p>
+                            <p> Dr. Seuss once said : <q>Reality is finally better than your dreams.</q></p>
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
